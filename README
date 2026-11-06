@@ -1,11 +1,11 @@
 # Download Android source with patches(local_manifests)
  Refer to http://source.android.com/source/downloading.html
  $ repo init -u https://mirrors.bfsu.edu.cn/git/AOSP/platform/manifest --depth=1 -b android-10.0.0_r32 --repo-url=https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
- $ git clone https://github.com/rpi3bdroid/local_manifests .repo/local_manifests -b android10
+ $ git clone http://192.168.101.121:8080/local_manifests .repo/local_manifests -b android10
  $ repo sync
 
 # Build for Raspberry Pi3
- https://github.com/android-rpi/device_brcm_rpi3/tree/android10
+ https://github.com/rpi3bdroid/device_brcm_rpi3/tree/android10
 
 Use -j[n] option on sync & build steps, if build host has a good number of CPU cores.
 The build is tested on XUbuntu 26.04 LTS.
